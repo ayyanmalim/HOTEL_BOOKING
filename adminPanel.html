@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taj Hotel - HOME</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-
+              bundle.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+              rel="stylesheet" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS\style.css">
+        <style>
+            #dashboard-menu{
+                position: fixed;
+                height: 100%
+            }
+            .alert-box{
+                position: fixed;
+                top: 50px; /* Adjust the top distance as needed */
+                right: 10px; /* Adjust the right distance as needed */
+                z-index: 9999;
+            }
+            @media screen and (max-width: 575px) {
+                .availability-form {
+                    margin-top: 25px;
+                    padding: 0 35px;
+                }
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <!-- Navbar -->
+        <nav id="nav-bar" class="navbar navbar-expand-lg bg-dark px-lg-3 py-lg-2 shadow-sm sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-5 fw-bold fs-3 h-font text-white" href="index.html">Taj Hotel</a>
+                <button class="navbar-toggler shadow-none" type="button" data-bs- 
+                        toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto mx-5">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="booking.html" id="homes">Add Bookings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-2 text-white" href="customer.html" id="rooms">Add Customers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-2 text-white" href="contact.html" id="contact">Add Amenities</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--<p>welcome</p>-->
+        <div class="col-lg-2.5 bg-dark border-top border-3 border-secondary" id="dashboard-menu">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid flex-lg-column align-items-stretch">
+                    <h4 class="mt-2 text-light">ADMIN PANEL</h4>
+                    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#adminDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-column mt-2 align-items-stretch" id="adminDropdown">
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">DASHBOARD</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">REGISTERED CUSTOMERS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">AVAILABLE ROOMS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">AVAILABLE AMENITIES</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <script>
+// Close the success alert box after 5 seconds
+            setTimeout(function () {
+                var successAlert = document.getElementById('successAlert');
+                if (successAlert) {
+                    successAlert.style.display = 'none';
+                }
+            }, 3000);
+// Close the error alert box after 5 seconds
+            setTimeout(function () {
+                var errorAlert = document.getElementById('errorAlert');
+                if (errorAlert) {
+                    errorAlert.style.display = 'none';
+                }
+            }, 3000);
+        </script> </body> 
+</html>
